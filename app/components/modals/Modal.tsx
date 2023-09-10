@@ -33,6 +33,7 @@ const Modal: React.FC<ModalProps> = ({
 
     useEffect(() => {
         return () => {
+            alert(isOpen)
             setShowModal(isOpen);
         };
     }, [isOpen]);
